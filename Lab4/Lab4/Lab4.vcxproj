@@ -118,10 +118,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Account.h" />
+    <ClInclude Include="accountReader.h" />
+    <ClInclude Include="movieReader.h" />
+    <ClInclude Include="Reader.h" />
     <ClInclude Include="Store.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Account.cpp" />
+    <ClCompile Include="accountReader.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Reader.cpp" />
     <ClCompile Include="Store.cpp" />
   </ItemGroup>
   <ItemGroup>

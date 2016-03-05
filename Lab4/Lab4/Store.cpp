@@ -1,71 +1,60 @@
 #include "store.h"
 
+
 Store::Store(string name, int id, string accounts, string products, string transactions) 
 {
 	this->name = name;
 	this->storeID = id;
 
-	cout << name << " " << id << endl;
-	ifstream infileAccounts(accounts);
-	ifstream infileProducts(products);
-	ifstream infileTransactions(transactions);
-	if (!infileAccounts || !infileProducts || !infileTransactions)
+	ifstream accountFile(accounts);
+	ifstream productFile(products);
+	ifstream transactionFile(transactions);
+	if (!accountFile || !productFile || !transactionFile)
 	{
 		cout << "File could not be opened." << endl;
 		return;
 	}
 
-	addFile(infileAccounts, 0);
-	addFile(infileProducts, 1);
-	addFile(infileTransactions, 2);
-
+	processFile(accountFile, 0);   //start the add useAccount process
+	//addFile(productFile, 1);
+	//addFile(transactionFile, 2);
 }
 
-void Store::addFile(ifstream& file, int fileType)
+void Store::processFile(ifstream& file, int fileType)
 {
-	for (;;)
-	{
-		if (file.eof())
-			break;
-
-		string s;
-		getline(file, s);
-		
-
-		if (fileType == 0) //adduser();
+		if (fileType == 0) //adduser
 		{
-			addAccount(s);
+			addAccount(file);
 		}
-		else if (fileType == 1) 
+		else if (fileType == 1)  //addMovie
 		{
-			addProduct(s);
-		} //addMovie;
-		else 
+			addProduct(file);
+		} 
+		else
 		{
-			addTransaction(s);
-		} //addTransactions
-	}
-
+			addTransaction(file); // addTransactions
+		} 
 }
 
-void Store::addAccount(string account)
+void Store::addAccount(ifstream& file)
+{
+	
+	customerReader custRead;     // create Reader
+	custRead.processAccounts(file);  // Start reader process
+}
+
+void Store::addProduct(ifstream& file)
 {
 	//make reader
 	//give reader string
 }
 
-void Store::addProduct(string product)
+void Store::addTransaction(ifstream& file)
 {
 	//make reader
 	//give reader string
 }
 
-void Store::addTransaction(string transaction)
-{
-	//make reader
-	//give reader string
-}
-//addUser //calls the readers
 Store::~Store()
 {
 
