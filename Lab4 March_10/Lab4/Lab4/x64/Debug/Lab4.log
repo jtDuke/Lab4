@@ -1,0 +1,16 @@
+﻿Build started 3/10/2016 2:55:17 PM.
+     1>Project "C:\Users\trygg\Desktop\Lab4-master\Lab4\Lab4\Lab4.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\trygg\Desktop\Lab4-master\Lab4\x64\Debug\Lab4.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"C:\Users\trygg\Desktop\Lab4-master\Lab4\x64\Debug\Lab4.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\trygg\Desktop\Lab4-master\Lab4\x64\Debug\Lab4.lib" /MACHINE:X64 x64\Debug\Account.obj
+         x64\Debug\accountReader.obj
+         x64\Debug\AcctFactory.obj
+         x64\Debug\Main.obj
+         x64\Debug\Reader.obj
+         x64\Debug\ReaderFactory.obj
+         x64\Debug\Store.obj
+         Lab4.vcxproj -> C:\Users\trygg\Desktop\Lab4-master\Lab4\x64\Debug\Lab4.exe
+     1>Done Building Project "C:\Users\trygg\Desktop\Lab4-master\Lab4\Lab4\Lab4.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.43
