@@ -1,0 +1,126 @@
+﻿Build started 3/10/2016 6:40:56 PM.
+     1>Project "C:\Users\trygg\Desktop\Lab4 March_10\Lab4\Lab4\Lab4.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt Account.cpp BinTree.cpp Classic.cpp Comedy.cpp Drama.cpp HashTable.cpp Main.cpp Movie.cpp Store.cpp
+         Store.cpp
+         Movie.cpp
+         HashTable.cpp
+         Drama.cpp
+         Comedy.cpp
+         Classic.cpp
+         BinTree.cpp
+     1>c:\users\trygg\desktop\lab4 march_10\lab4\lab4\bintree.cpp(112): error C2039: 'getData': is not a member of 'Account'
+         c:\users\trygg\desktop\lab4 march_10\lab4\lab4\account.h(17): note: see declaration of 'Account'
+     1>c:\users\trygg\desktop\lab4 march_10\lab4\lab4\bintree.cpp(148): error C2039: 'getData': is not a member of 'Account'
+         c:\users\trygg\desktop\lab4 march_10\lab4\lab4\account.h(17): note: see declaration of 'Account'
+     1>c:\users\trygg\desktop\lab4 march_10\lab4\lab4\bintree.cpp(228): error C2039: 'getData': is not a member of 'Account'
+         c:\users\trygg\desktop\lab4 march_10\lab4\lab4\account.h(17): note: see declaration of 'Account'
+         c:\users\trygg\desktop\lab4 march_10\lab4\lab4\account.h(17): note: see declaration of 'Account'
+     1>c:\users\trygg\desktop\lab4 march_10\lab4\lab4\bintree.cpp(292): error C2039: 'getData': is not a member of 'Account'
+         c:\users\trygg\desktop\lab4 march_10\lab4\lab4\account.h(17): note: see declaration of 'Account'
+         c:\users\trygg\desktop\lab4 march_10\lab4\lab4\account.h(17): note: see declaration of 'Account'
+     1>c:\users\trygg\desktop\lab4 march_10\lab4\lab4\bintree.cpp(296): error C2039: 'getData': is not a member of 'Account'
+         c:\users\trygg\desktop\lab4 march_10\lab4\lab4\account.h(17): note: see declaration of 'Account'
+         c:\users\trygg\desktop\lab4 march_10\lab4\lab4\account.h(17): note: see declaration of 'Account'
+     1>c:\users\trygg\desktop\lab4 march_10\lab4\lab4\bintree.cpp(300): error C2039: 'getData': is not a member of 'Account'
+         c:\users\trygg\desktop\lab4 march_10\lab4\lab4\account.h(17): note: see declaration of 'Account'
+         c:\users\trygg\desktop\lab4 march_10\lab4\lab4\account.h(17): note: see declaration of 'Account'
+     1>c:\users\trygg\desktop\lab4 march_10\lab4\lab4\bintree.cpp(385): error C2679: binary '<<': no operator found which takes a right-hand operand of type 'Account' (or there is no acceptable conversion)
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(497): note: could be 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(477): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(457): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(437): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(417): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(396): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(376): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(355): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(335): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(315): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(290): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(270): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(236): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(216): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(209): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(202): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(196): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))'
+         c:\users\trygg\desktop\lab4 march_10\lab4\lab4\bintree.h(19): note: or       'std::ostream &operator <<(std::ostream &,BinTree &)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(1021): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const std::error_code &)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(983): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>,Account>(std::basic_ostream<char,std::char_traits<char>> &&,const _Ty &)'
+                 with
+                 [
+                     _Ty=Account
+                 ]
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(973): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,unsigned char)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(966): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const unsigned char *)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(959): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,signed char)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(952): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const signed char *)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(826): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(779): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(741): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(694): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)'
+         c:\users\trygg\desktop\lab4 march_10\lab4\lab4\bintree.cpp(385): note: while trying to match the argument list '(std::ostream, Account)'
+     1>c:\users\trygg\desktop\lab4 march_10\lab4\lab4\bintree.cpp(418): error C2039: 'getData': is not a member of 'Account'
+         c:\users\trygg\desktop\lab4 march_10\lab4\lab4\account.h(17): note: see declaration of 'Account'
+         c:\users\trygg\desktop\lab4 march_10\lab4\lab4\account.h(17): note: see declaration of 'Account'
+     1>c:\users\trygg\desktop\lab4 march_10\lab4\lab4\bintree.cpp(425): error C2039: 'getData': is not a member of 'Account'
+         c:\users\trygg\desktop\lab4 march_10\lab4\lab4\account.h(17): note: see declaration of 'Account'
+         c:\users\trygg\desktop\lab4 march_10\lab4\lab4\account.h(17): note: see declaration of 'Account'
+     1>c:\users\trygg\desktop\lab4 march_10\lab4\lab4\bintree.cpp(447): error C2678: binary '==': no operator found which takes a left-hand operand of type 'Account' (or there is no acceptable conversion)
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\system_error(379): note: could be 'bool std::operator ==(const std::error_condition &,const std::error_condition &) noexcept'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\system_error(371): note: or       'bool std::operator ==(const std::error_condition &,const std::error_code &) noexcept'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\system_error(363): note: or       'bool std::operator ==(const std::error_code &,const std::error_condition &) noexcept'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\system_error(355): note: or       'bool std::operator ==(const std::error_code &,const std::error_code &) noexcept'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\exception(341): note: or       'bool std::operator ==(const std::exception_ptr &,std::nullptr_t) throw()'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\exception(336): note: or       'bool std::operator ==(std::nullptr_t,const std::exception_ptr &) throw()'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\exception(331): note: or       'bool std::operator ==(const std::exception_ptr &,const std::exception_ptr &) throw()'
+         c:\users\trygg\desktop\lab4 march_10\lab4\lab4\bintree.cpp(447): note: while trying to match the argument list '(Account, Account)'
+     1>c:\users\trygg\desktop\lab4 march_10\lab4\lab4\bintree.cpp(451): error C2678: binary '<': no operator found which takes a left-hand operand of type 'Account' (or there is no acceptable conversion)
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\system_error(426): note: could be 'bool std::operator <(const std::error_condition &,const std::error_condition &) noexcept'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\system_error(417): note: or       'bool std::operator <(const std::error_code &,const std::error_code &) noexcept'
+         c:\users\trygg\desktop\lab4 march_10\lab4\lab4\bintree.cpp(451): note: while trying to match the argument list '(Account, Account)'
+     1>c:\users\trygg\desktop\lab4 march_10\lab4\lab4\bintree.cpp(536): error C2039: 'getData': is not a member of 'Account'
+         c:\users\trygg\desktop\lab4 march_10\lab4\lab4\account.h(17): note: see declaration of 'Account'
+     1>c:\users\trygg\desktop\lab4 march_10\lab4\lab4\bintree.cpp(571): error C2679: binary '<<': no operator found which takes a right-hand operand of type 'Account' (or there is no acceptable conversion)
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(497): note: could be 'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_streambuf<char,std::char_traits<char>> *)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(477): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(const void *)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(457): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long double)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(437): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(double)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(417): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(float)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(396): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned __int64)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(376): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(__int64)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(355): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned long)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(335): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(long)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(315): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned int)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(290): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(int)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(270): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(unsigned short)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(236): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(short)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(216): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(bool)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(209): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::ios_base &(__cdecl *)(std::ios_base &))'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(202): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ios<char,std::char_traits<char>> &(__cdecl *)(std::basic_ios<char,std::char_traits<char>> &))'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(196): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::basic_ostream<char,std::char_traits<char>>::operator <<(std::basic_ostream<char,std::char_traits<char>> &(__cdecl *)(std::basic_ostream<char,std::char_traits<char>> &))'
+         c:\users\trygg\desktop\lab4 march_10\lab4\lab4\bintree.cpp(517): note: or       'std::ostream &operator <<(std::ostream &,BinTree &)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(1021): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const std::error_code &)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(983): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>,Account>(std::basic_ostream<char,std::char_traits<char>> &&,const _Ty &)'
+                 with
+                 [
+                     _Ty=Account
+                 ]
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(973): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,unsigned char)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(966): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const unsigned char *)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(959): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,signed char)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(952): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const signed char *)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(826): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(779): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(741): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,char)'
+         c:\program files (x86)\microsoft visual studio 14.0\vc\include\ostream(694): note: or       'std::basic_ostream<char,std::char_traits<char>> &std::operator <<<char,std::char_traits<char>>(std::basic_ostream<char,std::char_traits<char>> &,const char *)'
+         c:\users\trygg\desktop\lab4 march_10\lab4\lab4\bintree.cpp(571): note: while trying to match the argument list '(std::ostream, Account)'
+         Account.cpp
+         Generating Code...
+         Compiling...
+         Main.cpp
+         Generating Code...
+     1>Done Building Project "C:\Users\trygg\Desktop\Lab4 March_10\Lab4\Lab4\Lab4.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:04.29
