@@ -119,17 +119,40 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Account.h" />
-    <ClInclude Include="accountReader.h" />
-    <ClInclude Include="movieReader.h" />
-    <ClInclude Include="Reader.h" />
+    <ClInclude Include="BinTree.h" />
+    <ClInclude Include="Borrow.h" />
+    <ClInclude Include="Classic.h" />
+    <ClInclude Include="Comedy.h" />
+    <ClInclude Include="Drama.h" />
+    <ClInclude Include="HashTable.h" />
+    <ClInclude Include="History.h" />
+    <ClInclude Include="HistoryList.h" />
+    <ClInclude Include="Inventory.h" />
+    <ClInclude Include="Movie.h" />
+    <ClInclude Include="MovieFactory.h" />
+    <ClInclude Include="Return.h" />
     <ClInclude Include="Store.h" />
+    <ClInclude Include="Transaction.h" />
+    <ClInclude Include="TransFactory.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Account.cpp" />
-    <ClCompile Include="accountReader.cpp" />
+    <ClCompile Include="BinTree.cpp" />
+    <ClCompile Include="Borrow.cpp" />
+    <ClCompile Include="Classic.cpp" />
+    <ClCompile Include="Comedy.cpp" />
+    <ClCompile Include="Drama.cpp" />
+    <ClCompile Include="HashTable.cpp" />
+    <ClCompile Include="History.cpp" />
+    <ClCompile Include="HistoryList.cpp" />
+    <ClCompile Include="Inventory.cpp" />
     <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Reader.cpp" />
+    <ClCompile Include="Movie.cpp" />
+    <ClCompile Include="MovieFactory.cpp" />
+    <ClCompile Include="Return.cpp" />
     <ClCompile Include="Store.cpp" />
+    <ClCompile Include="Transaction.cpp" />
+    <ClCompile Include="TransFactory.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="data4commands.txt" />

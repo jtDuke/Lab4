@@ -1,26 +1,30 @@
-#include "store.h"
+#include "Store.h"
 
 
-Store::Store(string name, int id, string accounts, string products, string transactions) 
+
+Store::Store() {}
+
+Store::Store(string name, int id)
 {
 	this->name = name;
 	this->storeID = id;
 
-	ifstream accountFile(accounts);
-	ifstream productFile(products);
-	ifstream transactionFile(transactions);
-	if (!accountFile || !productFile || !transactionFile)
+	ifstream accountFile("data4users.txt");
+	ifstream movieFile("data4movies.txt");
+	ifstream transactionFile("data4commands.txt");
+	if (!accountFile || !movieFile || !transactionFile)
 	{
 		cout << "File could not be opened." << endl;
 		return;
 	}
 
-	processFile(accountFile, 0);   //start the add useAccount process
-	//addFile(productFile, 1);
-	//addFile(transactionFile, 2);
+	processFileStreams(accountFile, 0);		 //start the add useAccount process
+	processFileStreams(movieFile, 1);			 //addFile(productFile, 1);
+	//processFileStreams(transactionFile, 2);     //addFile(transactionFile, 2);
 }
 
-void Store::processFile(ifstream& file, int fileType)
+
+void Store::processFileStreams(ifstream& file, int fileType)
 {
 		if (fileType == 0) //adduser
 		{
@@ -28,7 +32,7 @@ void Store::processFile(ifstream& file, int fileType)
 		}
 		else if (fileType == 1)  //addMovie
 		{
-			addProduct(file);
+			addMovie(file);
 		} 
 		else
 		{
@@ -36,14 +40,37 @@ void Store::processFile(ifstream& file, int fileType)
 		} 
 }
 
+
 void Store::addAccount(ifstream& file)
 {
-	
-	customerReader custRead;     // create Reader
-	custRead.processAccounts(file);  // Start reader process
+	while (!file.eof())				// check for end of file
+	{
+		Account yo;
+		string newLine;				// placeholder for line of input
+		getline(file, newLine);		// get line of input from Accounts file
+
+		if (newLine == "")  // (backup eof check) If true, we're at the end of file
+			break;			// exit loop //clear memory for account
+
+		if (!yo.validateData(newLine))		// calling function to validate the line of data
+		{
+			cout << "INVALID ACCOUNT" << endl;
+			continue; 
+		}
+
+		Account *newAccount = yo.createAccount(newLine);
+		accountTable.insert(newAccount);
+		accountTable.display(newAccount->getID()); //adds accounts to hashTable
+
+
+		// !!!!!----- TESTING PURPOSES , DON'T DELETE ---------!!!!!!! //
+		//userAccounts[newAccount->getID()] = newAccount;
+		//cout << "ACCOUNT ID: " << newAccount->getID() << endl;
+		//cout << "HASHED TO: " << accountTable.[newAccount->getID()] << endl;
+	}
 }
 
-void Store::addProduct(ifstream& file)
+void Store::addMovie(ifstream& file)
 {
 	//make reader
 	//give reader string

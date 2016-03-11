@@ -1,7 +1,6 @@
-
-
 #include "Reader.h"
 #include "Account.h"
+
 class accountReader : public Reader
 {
 public:
@@ -31,7 +30,7 @@ public:
 				continue;
 			}
 
-			Account *nAcct = new customerAccount;
+			Account *nAcct = new Account;
 			nAcct->createAccount(newLine);
 			nAcct->displayAccount();
 		}

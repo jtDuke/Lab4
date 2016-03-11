@@ -5,53 +5,38 @@
 //
 // Implementation and Assumptions:
 //   --
-//-----------------------------------------B------------------------------------
+//-----------------------------------------------------------------------------
+#ifndef ACCOUNT_H
+#define ACCOUNT_H
 #include <sstream>
 #include <string>
 #include <iostream>
+#include <fstream>
 using namespace std;
 
 class Account
 {
+	friend ostream& operator<<(ostream& os, Account *acct);
+
 public:
 	Account();
-	virtual ~Account();
-	virtual void createAccount(string newLine) = 0;
-	virtual void displayAccount() = 0;
-protected:
+	Account(const int id, const string fname, const string lname);
+	~Account();
+	Account* createAccount(string &newLine);
+	void displayAccount() const;
+	bool validateData(string newLine);
+	void setID(const int id);
+	void setFirstName(const string name);
+	void setLastName(const string name);
+	int getID() const;
+	string getFirstName() const;
+	string getLastName() const;
+	bool operator==(const Account &acct);
+	bool operator<(const Account &acct);
+
+private:
 	string firstName;
 	string lastName;
 	int userID;
 };
-
-class customerAccount : public Account
-{
-public:
-	customerAccount()
-	{
-		//cout << "customerAccount Constructor" << endl;
-	}
-	~customerAccount() 
-	{
-		cout << "customerAccount Destructor" << endl;
-	}
-	void createAccount(string newLine)
-	{
-		istringstream testLine(newLine);		// allows splitting of a string
-		string s;
-		int id = 0;
-
-		getline(testLine, s, ' ');		// userID		
-		id = stoi(s);
-		this->userID = id;
-		getline(testLine, s, ' ');		// firstName
-		this->firstName = s;
-		getline(testLine, s, ' ');		// lastName
-		this->lastName = s;
-		
-	}
-	void displayAccount()
-	{
-		cout << "Account: " << userID << " " << firstName << " " << lastName << endl;
-	}
-};
+#endif
