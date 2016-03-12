@@ -15,6 +15,7 @@
 #include "HashTable.h"
 #include "Movie.h"
 #include "MovieFactory.h"
+#include "TransFactory.h"
 #include "BinTree.h"
 using namespace std;
 
@@ -25,12 +26,11 @@ public:
 	Store();			//store
 	Store(string, int);							    
 	
-	
 	void processFileStreams(ifstream&, int);  //Decides which file to read from
 
 	void addAccount(ifstream& file);     // Add users to system 
 	void addMovie(ifstream& file);       // Add movies to system
-	void addTransaction(ifstream& file); // Perfrom transactions on the system
+	void executeTransactions(ifstream& file); // Perfrom transactions on the system
 	
 	//void storeAccount(Account* newAccount);
 	~Store();

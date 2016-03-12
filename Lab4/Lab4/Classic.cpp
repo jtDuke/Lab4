@@ -15,6 +15,8 @@ bool Classic::operator==(const Movie& mov) const
 		if (this->month == mov.getMonth())
 			if (this->majorActor == mov.getMajorActor())
 				return true;
+			else
+				return false;
 	}
 	else
 		return false;	
@@ -84,10 +86,6 @@ char Classic::getType() const
 {
 	return movieType;
 }
-void Classic::setReleaseDate(const int &date)
-{
-	this->releaseDate = date;
-}
 void Classic::setMajorActor(const string &actor)
 {
 	this->majorActor = actor;
@@ -127,10 +125,6 @@ int Classic::getYear() const
 string Classic::getMajorActor() const
 {
 	return majorActor;
-}
-int Classic::getReleaseDate() const
-{
-	return releaseDate;
 }
 int Classic::getMonth() const
 {

@@ -25,24 +25,28 @@ bool Drama::operator!=(const Movie& mov) const
 }
 bool Drama::operator<(const Movie& mov) const 
 {
-	if (this->director < mov.getDirector())
-		return true;
-	if (this->director > mov.getDirector())
-		return false;
-
-	 if (this->title < mov.getTitle())
+	if (this->director == mov.getDirector())
+	{
+		if (this->title < mov.getTitle())
+			return true;
+		else
+			return false;
+	}
+	else if (this->director < mov.getDirector())
 		return true;
 	else
 		return false;
 }
 bool Drama::operator>(const Movie& mov) const 
 {
-	if (this->director > mov.getDirector())
-		return true;
-	if (this->director <  mov.getDirector())
-		return false;
-	
-	if (this->title > mov.getTitle())
+	if (this->director == mov.getDirector())
+	{
+		if (this->title > mov.getTitle())
+			return true;
+		else
+			return false;
+	}
+	else if (this->director > mov.getDirector())
 		return true;
 	else
 		return false;

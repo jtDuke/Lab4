@@ -26,24 +26,29 @@ bool Comedy::operator!=(const Movie& mov) const
 }	
 bool Comedy::operator<(const Movie& mov) const 
 { 
-	if (this->title < mov.getTitle())
-		return true;
-	if (this->title > mov.getTitle())
-		return false;
-
-	if (this->year < mov.getYear())
+	if (this->title == mov.getTitle())
+	{
+		if (this->year < mov.getYear())
+			return true;
+		else
+			return false;
+	}
+	else if (this->title < mov.getTitle())
 		return true;
 	else
 		return false;
 }
+
 bool Comedy::operator>(const Movie& mov) const 
 {
-	if (this->title > mov.getTitle())
-		return true;
-	if (this->title <  mov.getTitle())
-		return false;
-
-	if (this->year > mov.getYear())
+	if (this->title == mov.getTitle())
+	{
+		if (this->year > mov.getYear())
+			return true;
+		else
+			return false;
+	}
+	else if (this->title > mov.getTitle())
 		return true;
 	else
 		return false;
@@ -51,7 +56,7 @@ bool Comedy::operator>(const Movie& mov) const
 
 void Comedy::display() const
 {
-	cout << this->title << " " << this->director << " " << this->year << endl;
+	cout << this->director << " " << this->title << " " << this->year << endl;
 }
 
 void Comedy::setTitle(const string &title)
