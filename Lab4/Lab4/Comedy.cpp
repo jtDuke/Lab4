@@ -88,14 +88,21 @@ int Comedy::getYear() const
 }
 
 
-
-void Comedy::setReleaseDate(const int &date)
+int Comedy::getMonth() const
 {
-	this->releaseDate = 0;
+	return month;
 }
-int Comedy::getReleaseDate() const
+void Comedy::setMonth(const int &month)
 {
-	return 0;
+	this->month = month;
+}
+void Comedy::setType(const char &type) 
+{
+	this->movieType = type;
+}
+char Comedy::getType() const
+{
+	return movieType;
 }
 void Comedy::setMajorActor(const string &actor)
 {

@@ -10,10 +10,14 @@ Classic::~Classic()
 
 bool Classic::operator==(const Movie& mov) const
 {
-	if (this->releaseDate == mov.getReleaseDate() && this->majorActor == mov.getMajorActor())
-		return true;
+	if (this->year == mov.getYear())
+	{
+		if (this->month == mov.getMonth())
+			if (this->majorActor == mov.getMajorActor())
+				return true;
+	}
 	else
-		return false;
+		return false;	
 }
 bool Classic::operator!=(const Movie& mov) const 
 {
@@ -24,24 +28,44 @@ bool Classic::operator!=(const Movie& mov) const
 }
 bool Classic::operator<(const Movie& mov) const 
 { 
-	if (this->releaseDate < mov.getReleaseDate())
-		return true;
-	if (this->releaseDate > mov.getReleaseDate())
-		return false;
-
-	if (this->majorActor < mov.getMajorActor())
+	if (this->year == mov.getYear())
+	{
+		if (this->month == mov.getMonth())
+		{
+			if (this->majorActor < mov.getMajorActor())
+				return true;
+			else
+				return false;
+		}
+		else if (this->month < mov.getMonth())
+			return true;
+		else
+			return false;
+	}
+	else if (this->year < mov.getYear())
 		return true;
 	else
 		return false;
 }
+
 bool Classic::operator>(const Movie& mov) const 
 { 
-	if (this->releaseDate > mov.getReleaseDate())
-		return true;
-	if (this->releaseDate <  mov.getReleaseDate())
-		return false;
+	if (this->year == mov.getYear())
+	{
+		if (this->month == mov.getMonth())
+		{
+			if (this->majorActor > mov.getMajorActor())
+				return true;
+			else
+				return false;
+		}
+		else if (this->month > mov.getMonth())
+			return true;
+		else
+			return false;
 
-	if (this->majorActor > mov.getMajorActor())
+	}
+	else if (this->year > mov.getYear())
 		return true;
 	else
 		return false;
@@ -49,10 +73,17 @@ bool Classic::operator>(const Movie& mov) const
 
 void Classic::display() const
 {
-	cout << this->director << " " << this->title << " " << this->majorActor << this->year << endl;
+	cout << this->director << " " << this->title << " " << this->majorActor << " " << this->month << " " << this->year << endl;
 }
 
-
+void Classic::setType(const char &type)
+{
+	this->movieType = type;
+}
+char Classic::getType() const
+{
+	return movieType;
+}
 void Classic::setReleaseDate(const int &date)
 {
 	this->releaseDate = date;
@@ -100,4 +131,12 @@ string Classic::getMajorActor() const
 int Classic::getReleaseDate() const
 {
 	return releaseDate;
+}
+int Classic::getMonth() const
+{
+	return month;
+}
+void Classic::setMonth(const int &month)
+{
+	this->month = month;
 }

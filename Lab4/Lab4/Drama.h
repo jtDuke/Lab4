@@ -15,6 +15,8 @@ public:
 
 	void display() const;
 
+	char getType() const;
+	void setType(const char &type);
 	void setTitle(const string &title);
 	void setDirector(const string &dir);
 	void setYear(const int &year);
@@ -24,9 +26,9 @@ public:
 	void setStock(const int num);
 	int getStock() const;
 
-	virtual void setReleaseDate(const int &date);
-	virtual int getReleaseDate() const;
-	virtual void setMajorActor(const string &actor);
-	virtual string getMajorActor() const;
+	int getMonth() const;
+	void setMonth(const int &month);
+	void setMajorActor(const string &actor);
+	string getMajorActor() const;
 };
 #endif

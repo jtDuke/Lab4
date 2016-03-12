@@ -45,20 +45,20 @@ void Store::addAccount(ifstream& file)
 {
 	while (!file.eof())				// check for end of file
 	{
-		Account yo;
+		Account tempAcct;
 		string newLine;				// placeholder for line of input
 		getline(file, newLine);		// get line of input from Accounts file
 
 		if (newLine == "")  // (backup eof check) If true, we're at the end of file
 			break;			// exit loop //clear memory for account
 
-		if (!yo.validateData(newLine))		// calling function to validate the line of data
+		if (!tempAcct.validateData(newLine))		// calling function to validate the line of data
 		{
 			cout << "INVALID ACCOUNT" << endl;
 			continue; 
 		}
 
-		Account *newAccount = yo.createAccount(newLine);
+		Account *newAccount = tempAcct.createAccount(newLine);
 		accountTable.insert(newAccount);
 		accountTable.display(newAccount->getID()); //adds accounts to hashTable
 
@@ -72,8 +72,38 @@ void Store::addAccount(ifstream& file)
 
 void Store::addMovie(ifstream& file)
 {
-	//make reader
-	//give reader string
+	while (!file.eof())				// check for end of file
+	{
+		string newLine;				// placeholder for line of input
+		getline(file, newLine);		// get line of input from Accounts file
+
+		if (newLine == "")  // (backup eof check) If true, we're at the end of file
+			break;			// exit loop //clear memory for account
+		char movieType = MovieFactory::getMovieType(newLine);
+		if (!MovieFactory::ValidateData(movieType, newLine))	// calling function to validate the line of data
+		{
+			//cout << "INVALID ACCOUNT" << endl;
+			continue;
+		}		
+
+		if (movieType == 'C')
+		{
+			Movie *newMov = MovieFactory::createMovie(movieType, newLine);
+			classTree.insert(newMov);
+		}
+		else if (movieType == 'F')
+		{
+			Movie *newMov = MovieFactory::createMovie(movieType, newLine);
+			funTree.insert(newMov);
+		}
+		else
+		{
+			Movie *newMov = MovieFactory::createMovie(movieType, newLine);
+			dramaTree.insert(newMov);
+		}
+	}
+	classTree.DisplayInOrder();
+
 }
 
 void Store::addTransaction(ifstream& file)

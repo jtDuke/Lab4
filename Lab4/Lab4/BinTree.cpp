@@ -7,7 +7,7 @@
 // Purpose - Contains implementation of all the BinTree functions
 // ----------------------------------------------------------------------------
 
-// HOTFIX - NEED TO IMPLEMMENT WAY TO INSERT IN COPYTREE
+// FIX - NEED TO IMPLEMMENT WAY TO INSERT IN COPYTREE
 
 
 #include "BinTree.h"
@@ -111,10 +111,10 @@ void BinTree::CopyTree(Node *&root)
 	else
 	{
 		// dynamically allocate a new pointer with equivalent data
-		Movie *nd = MovieFactory::createMovie();//= new Movie(root->data->getID(), root->data->getFirstName(), root->data->getLastName());
+		//Movie *nd = MovieFactory::createMovie();//= new Movie(root->data->getID(), root->data->getFirstName(), root->data->getLastName());
 
 		// insert the new Movie
-		this->insert(nd);
+		//this->insert(nd);
 	}
 
 	// after insertion, move left, then right to find more nodes to be copied
@@ -206,11 +206,11 @@ bool BinTree::insertHelper(Node *&root, Movie *&nd)
 		{
 			return false;     // Movie already exists in BinTree
 		}
-		if (nd < root->data)
+		else if (*nd < *root->data)
 		{
 			return insertHelper(root->left, nd);    // recursive call left
 		}
-		else if (nd > root->data)
+		else if (*nd > *root->data)
 		{
 			return insertHelper(root->right, nd);	// recursive call right
 		}

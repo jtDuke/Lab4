@@ -53,6 +53,14 @@ void Drama::display() const
 	cout << this->title << " " << this->director << " " << this->year << endl;
 }
 
+void Drama::setType(const char &type)
+{
+	this->movieType = type;
+}
+char Drama::getType() const
+{
+	return movieType;
+}
 void Drama::setTitle(const string &title) 
 {
 	this->title = title;
@@ -84,14 +92,6 @@ int Drama::getStock() const
 	return this->stock;
 }
 
-void Drama::setReleaseDate(const int &date)
-{
-	this->releaseDate = 0;
-}
-int Drama::getReleaseDate() const
-{
-	return 0;
-}
 void Drama::setMajorActor(const string &actor)
 {
 	this->majorActor = "";
@@ -99,4 +99,12 @@ void Drama::setMajorActor(const string &actor)
 string Drama::getMajorActor() const
 {
 	return "";
+}
+int Drama::getMonth() const
+{
+	return month;
+}
+void Drama::setMonth(const int &month)
+{
+	this->month = month;
 }

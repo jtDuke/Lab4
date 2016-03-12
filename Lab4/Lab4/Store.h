@@ -13,6 +13,9 @@
 #include <iostream>
 #include <string>
 #include "HashTable.h"
+#include "Movie.h"
+#include "MovieFactory.h"
+#include "BinTree.h"
 using namespace std;
 
 class Store
@@ -36,7 +39,9 @@ private:
 	string name;
 	int storeID;
 	HashTable accountTable;
-
+	BinTree funTree;
+	BinTree dramaTree;
+	BinTree classTree;
 	//Account *userAccounts[10000];
 	//AcctFactory accountF;
 	//accountHashTable hashTable(MAX_ACCOUNTS);

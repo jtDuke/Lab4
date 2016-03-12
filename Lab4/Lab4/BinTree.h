@@ -22,7 +22,7 @@ class BinTree
 private:
 
 	struct Node {
-		Movie* data;				// pointer to data object
+		Movie* data = NULL;				// pointer to data object
 		Node* left = NULL;			// left subtree pointer
 		Node* right = NULL;			// right subtree pointer
 	};
